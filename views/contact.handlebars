@@ -26,7 +26,8 @@
             </div>
             <div class="contact">
                 <h3>Email Me</h3>
-                <form>
+                {{msg}}
+                <form method="POST" action="send">
                     <p>
                         <label>Name</label>
                         <input type="text" placeholder="Enter your name..." name="name">
@@ -48,7 +49,7 @@
                         <textarea placeholder="Enter your message here..." name="message" rows="5"></textarea>
                     </p>
                     <p class="full">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </p>
                 </form>
             </div>
